@@ -1,1 +1,16 @@
+# Day 3
 
+Today I learned about API which is Application Programing Interface
+
+It is the mode of communication between Client and Server 
+
+Leraned about HTTP i.e Hyper Text Transfer Protocal
+
+this takes the request from the client to the server and then the server checks it and then send the response for it.
+EX login request to the google
+
+I Learned HTML i.e Hyper Text Markup Language which is the language used to build the structure and content of web pages.
+Every website you open in a browser is made of HTML.
+
+I learned some command of linux as well such as 
+ls, cd, pwd, mkdir, cp, mv
