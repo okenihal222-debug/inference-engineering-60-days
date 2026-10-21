@@ -1,0 +1,18 @@
+# Day 4 
+
+Today I learn about the tokens 
+
+If we want the AI or LLM model to response then first it should understand what is it but the computer only understands 0 and 1 so we have to convert it in binary or in number format which is given to the llm.
+
+When we provide the number  to the system then it finalise the answer.
+But thwe answer is in number format so the system then again changes the number to words or alphabet so we can understand it.
+
+there are different sub types of token like TTFT, tokens per second and inter-token latency.
+
+We can understan TTFT as How long before the waiter brings the first dish.
+
+Tokens per sec as Dishes per second
+
+inter-token latency as How fast the following dishes keep coming
+
+This is all which I have learned today...
