@@ -15,4 +15,11 @@ Tokens per sec as Dishes per second
 
 inter-token latency as How fast the following dishes keep coming
 
+For checking I have used a website called Tiktokenizer where whatever we type it tells the  number of it which it reads 
+
+For ex Hi my name is nihal 
+it ueses 12194, 922, 1308, 382, 64426, 280
+
+this is what the LLM understands and answer it accordingly.
+
 This is all which I have learned today...
