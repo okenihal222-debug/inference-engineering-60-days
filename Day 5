@@ -1,0 +1,24 @@
+# Day 5 
+
+Today I came across the topic Latency and Throughput
+
+The Latency tells us about the time which is required to provide the output.
+
+Lesser the latency Higher the speed of the response
+
+There are different type of latencies such as P90, P95, P99 which tells the accuracy of the model.
+
+P90 means 90% of response is delivered in the given time and 10% may take higher time
+
+P95 means 95% of response is delivered in the given time and 5% may take higher time
+
+Similarly with P99.
+
+# Throughput
+
+The throughputs tells us about the weight or capacity a server can handel
+So Higher the throughput the stronger the server will be.
+
+This two plays important role in giving the information about how good the website or LLM is.
+
+This is all what I learn today.
