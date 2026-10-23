@@ -1,0 +1,21 @@
+# Day 6
+
+Today I am learning about Prefill and decode
+
+So when we give the llm prompt at that time the response is generated slowly i.e it does not generates the whole answer in a sec but in parts 
+
+This is because first the prefill is done i.e the llm takes the prompt and analize the what are the main pints and the values. 
+It is done with the help of KV cache method( which stores the recent information or the recent tokens ).
+
+The issue is that it does predict and tell the value of tokens but does not predict the token of the response so here Decde is use
+As in decde the tokens are generated one by one and get chained to the previous one.
+
+In Prefill the all the token are taken in one go but in decode it takes the token one by one and then answer.
+
+#2 Online and Offline inference 
+
+In this I came to know that as humans required sleep to keep everythink in there mind, the same way AI requires a sleep too which is done in offline model and used for mainly for complex task which requires deep thinking.
+
+#3 Asynchronous Inference
+
+This is just similar to Offline inference.
