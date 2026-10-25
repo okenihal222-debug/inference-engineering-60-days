@@ -1,0 +1,14 @@
+# Day 8 
+
+Today I started learning about Neural Network 
+
+A neural network is a layered structure of nodes where each node applies a weight of number matrix from 0 to 1. 
+
+Neural Network is used to identify the numbers which are written on the paper and which AI should understand and identify what it is written.
+Not only numbers but also wat we right 
+
+Neural Network goes through multiple layers to verify the letter or number.
+
+It checks the weight of the neuron and send it biases which is a constant value added to the weighted sum of inputs before it passes through an activation function.
+
+It uses the sigmon formula.
