@@ -1,0 +1,16 @@
+#Day 9
+
+
+1. Loss Function (How improper is the AI?). A loss function measures the difference between the AI's prediction and the genuine answer.
+Example:. - Actual marks: 90 . - AI predicted: 75 . - Difference: 15 marks. 
+The AI uses this error to understand how outside its prediction is . Goal: Reduce the loss as much as possible. 
+
+2 . Gradient Descent (How does AI improve?). Gradient descent is a method that helps AI learn by adjusting its weights to reduce errors.
+Example: Imagine walking down a hill to reach the minimal point . You take infinitesimal steps downhill until you reach the bottom. Similarly , AI adjusts its weights step by step to reduce the loss . 
+Goal: Find weights that produce further right predictions .
+
+3 . Overfitting (When AI memorizes alternatively of learning). 
+Overfitting happens when an AI model learns the training data too closely but performs poorly on modern data. 
+Example: A student memorizes answers from former exam papers but cannot solve modern questions . 
+Similarly, an overfitted AI performs considerably on companion examples but struggles with unknown ones . 
+Goal: Train AI to recognize universal patterns kinda than memorize examples .
