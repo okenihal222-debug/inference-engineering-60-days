@@ -1,0 +1,19 @@
+#Day 10
+
+#PyTorch
+PyTorch is a most popular deep learning model frame work.
+It is written in PyThon. Used in google, meta deta
+
+# Tensor
+Tensor is any kind of representation of Numbers
+
+Randomm Tensors are the way many neural networks learn as after adding random numbers they adjust them for better representation.
+Tensor can do multiplication, addition, subtraction and division
+
+### Matrix
+There is two way to multiply in neural network
+1 Element wise multiplication 
+2 Matrix wise Multiplication (Dot Product)
+
+
+Learning Bit less compare to previous days but trying to be consitent.
