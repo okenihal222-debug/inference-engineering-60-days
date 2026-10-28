@@ -1,0 +1,8 @@
+# Day 11 Transformer architecture
+
+Tranformer is a type of Neural Networks and Neural Networks understands numbers.
+With the help of transformer we encodes the sentence and then give it to the system.
+
+With the help of the decoder we can get the output for the given input.
+
+This is what I have learned.
