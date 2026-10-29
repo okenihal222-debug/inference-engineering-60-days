@@ -1,0 +1,13 @@
+Attention mechanisms 
+
+Attention allows a Transformer to determine which tokens are relevant to other tokens when computing their contextual representations.
+
+ Query (Q): What information is this token looking for?
+ Key (K): What information can this token be matched against?
+ Value (V): What information can this token contribute?
+
+Causal masking prevents a token from attending to future tokens.
+
+Instead of calculating attention using only one set of Q, K, and V projections, Transformers use multiple attention heads.
+
+Each head learns different projections and can capture different relationships between tokens.
