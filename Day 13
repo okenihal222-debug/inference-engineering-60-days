@@ -1,0 +1,14 @@
+# Day 13
+
+Tokenization plays an important role in the LLM models as it is the one which decodes and encodes the input and provide the answer according to it.
+The value varaise with the models which we use as gpt 2 takes more number of token rather than gpt 4 for the same statement.
+
+Context Windows
+This gives the meaning of the words to the llm so it has the contex of about what user is asking and answer it accordingly.
+
+Tokens number chages with the size of the sentence.
+And maximum number of token i  used for the sentences which are non english.
+
+Byte-Pair Encoding (BPE) is used to break down the different vocabilaries in small parts so the system can understand it.
+
+Overall we can not use LLM to get our answer without token as it is the main connection between the human and the system.
