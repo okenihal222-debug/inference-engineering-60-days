@@ -1,0 +1,24 @@
+# Day  15
+
+# Layer 
+Layer is different steps which LLM takes to give the output such as:
+
+ Allows tokens to incorporate information from earlier tokens.
+ Applies learned transformations to each token’s representation.
+ Combine the input of a sublayer with its output.
+ Helps maintain stable representations throughout the network.
+
+# Logits/ Transformer 
+
+It is used to decide which response should be send from multiple options which align with the statement. We can also say the probability tokens.
+
+# Logits
+It tells the probabilty of an word to accur next
+
+# Softmax
+In logits the values varies i.e there is negative values, values greater then 1.
+But we need the value from 0 to 1 as the system will understan which is the correct one to pick so we use soft max
+
+P_i = \frac{e^{z_i}}{\sum_j e^{z_j}}
+this is the formula of softmax where the valure is kept in the power of e then divided with the sum of the values of e.
+
