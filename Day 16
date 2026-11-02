@@ -1,0 +1,25 @@
+# Day 16
+
+When we give the LLM a prompt then the llm gives us a response but while giving the response llm needs to decidie which word should be given in the prompt.
+So for that there are 5 standard strategiies to it which help llm to decided the next word.
+
+1. Greedy Decoding
+In this the word which has highest probabilty is choosen.
+But the drawback is that LLM needs to find the followeing word so sometimes if we choose the highest prob word the next word is not the best one out there so it is not a very good idea to use greedy decoding.
+
+2. Sampling 
+In this instead of taking the highest probability word we take a random word from the probabilities.
+But taking a varied, natural text in long sentence can make the sentence derail.
+
+3. Top-K Sampling 
+In this the we take the top 3 words which has highest probability.
+But in this we have to take 3 wods strictky even if they are not correct. 
+
+4. Top-P (nucleus) sampling
+In this we keep the top 3 words until they exceed the probablity.
+If the word has higher value then p then it will only keep that word but in top k it will alwyas select 3 words hence top p is commonly default.
+So the nucleus grows when the model is unsure and strinks when it is confident.
+
+5. Temprature 
+This reshapes the design before any of this are used.
+This gives us low focsued, highly creative then incoherent used with top p.
