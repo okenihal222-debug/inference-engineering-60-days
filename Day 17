@@ -1,0 +1,25 @@
+# Day 17 
+
+When we give the LLM any prompt then it has to  use the reponse of it.
+So to get a better answer we should have a good inference enginnering.
+So we use a application as vLLM as it states that it is the best one which can be use for practices.
+
+# KV Cache
+When we give a prompt to the LLm then it need to process it so while  processing it goes through various transformers where there is 'Query (Q), Key(K), Value(V).
+In it Q is multiplied by the Transpose of K to get the attention matrix and then the attention matrix is multiplied by the value to get contex matrix and then it provides Latest token.
+
+So when we get the new token we have to predict a next token so while predicting the next token we can use the previous keys and values rather than making a new one.
+This is called as KV Cache.
+
+# Prefill
+When the LLM gets the first prompt and uses the transformer and the Key and Value matrix for the first time for prediction then that is called as Prefill.
+
+# Decoding
+When the LLM uses the key and value for the next time and genrating the token one after the other then it is called as Decoding.
+The priority is always gien to the Decoding then Prefilling.
+
+GPU vRAM 
+Key and Value matrices of each layer are stored in Blocks.
+Each word contains its own block and maximum number of token in One block is 16
+
+In vRAM there is major space given to the KV Cache and other is for PyTorch activation peak memory, non torch memory(optimizer states).
