@@ -1,0 +1,16 @@
+# Day 18
+1.Compute-Bound Operations
+
+An operation is compute-bound when its speed is primarily limited by the GPU’s computational capacity.
+If the GPU cannot perform the required mathematical operations quickly enough, computation becomes the bottleneck.
+Prefill is often compute-bound, particularly for sufficiently large batches or prompt workloads.
+Because many tokens can be processed together using large matrix multiplications, allowing the GPU to perform substantial computation for the data it loads.
+
+2.Memory-Bound Operations
+
+An operation is memory-bound when its speed is primarily limited by how quickly data can move between memory and the GPU’s computing units.
+Imagine a GPU with extremely fast processing capabilities.
+However, the GPU must repeatedly load model weights from high-bandwidth memory (HBM).
+If memory cannot supply data fast enough, the GPU’s computational units may remain underutilized.
+Decode is often memory-bandwidth-bound, particularly when generating tokens for a small number of requests.
+Because each decoding step may need to read a large portion of the model’s weights while performing relatively little computation per weight loaded.
