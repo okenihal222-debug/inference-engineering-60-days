@@ -20,6 +20,8 @@ The priority is always gien to the Decoding then Prefilling.
 
 GPU vRAM 
 Key and Value matrices of each layer are stored in Blocks.
-Each word contains its own block and maximum number of token in One block is 16
+## Each word contains its own block and maximum number of token in One block is 16
 
 In vRAM there is major space given to the KV Cache and other is for PyTorch activation peak memory, non torch memory(optimizer states).
+
+Each Block memory taken = 2*number of token (16) * no. of heads* head_dimension * bytes_per anum
