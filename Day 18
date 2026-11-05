@@ -1,10 +1,15 @@
 # Day 18
+
+When the prompt are used for the first time at that time they are in prefill phase where the prompt needs to be processed.
+The LLM has a limit for tokens which can be procced at once which of 2048 tokens for vLLM which is also called as token budget.
+This process is divided into 2 operations
+
 1.Compute-Bound Operations
 
 An operation is compute-bound when its speed is primarily limited by the GPU’s computational capacity.
 If the GPU cannot perform the required mathematical operations quickly enough, computation becomes the bottleneck.
-Prefill is often compute-bound, particularly for sufficiently large batches or prompt workloads.
-Because many tokens can be processed together using large matrix multiplications, allowing the GPU to perform substantial computation for the data it loads.
+Prefill is often compute-bound.
+Because many tokens can be processed together using large matrix multiplications allowing the GPU to perform substantial computation for the data it loads.
 
 2.Memory-Bound Operations
 
@@ -12,5 +17,15 @@ An operation is memory-bound when its speed is primarily limited by how quickly 
 Imagine a GPU with extremely fast processing capabilities.
 However, the GPU must repeatedly load model weights from high-bandwidth memory (HBM).
 If memory cannot supply data fast enough, the GPU’s computational units may remain underutilized.
-Decode is often memory-bandwidth-bound, particularly when generating tokens for a small number of requests.
+Decode is often memory-bandwidth-bound specially when generating tokens for a small number of requests.
 Because each decoding step may need to read a large portion of the model’s weights while performing relatively little computation per weight loaded.
+
+
+Waiting Queue is said for prefill stage
+Running Queue is said for decoding stage
+
+## Overall What I learned
+
+When we give a prompt to the llm at that time it reads on word at a time and generates its token for processing and this process is repeated again and again.
+So instead of processing the previous words again and again we keep there Key and Value in th ecache so whicle processing the next word it can go through the previous word form the cache itself.
+That's why we need RAM memory to store the cache.
