@@ -1,0 +1,27 @@
+# Day 19
+
+1. Expert
+Experts are smaller neural networks inside a larger model. Each expert learns different patterns during training.
+
+2. Router 
+Routing is the process of deciding which experts should process a particular token.
+A component called the router examines the token’s hidden representation and assigns scores to available experts.
+
+3. Active Parameters
+Suppose an MoE model has:
+ 100 billion total parameters.
+ 10 experts.
+ 10 billion parameters activated for a particular token (illustrative).
+The model has 100 billion parameters in total but it doesn’t use all of them for every token. It activates only a subset.
+
+MoE architectures can provide substantial model capacity without requiring every parameter to participate in every token’s computation.
+Fewer active parameters do not necessarily mean lower memory requirements.
+
+Understanding MoE helps engineers optimize:
+
+1. Expert routing: Efficiently assigning tokens to experts.
+2. GPU memory: Storing large expert weights.
+3. Communication: Moving tokens between GPUs when experts are distributed.
+4. Load balancing: Preventing a few experts from receiving too many tokens.
+5. Throughput: Processing multiple tokens efficiently.
+6. Latency: Reducing communication and expert execution overhead.
