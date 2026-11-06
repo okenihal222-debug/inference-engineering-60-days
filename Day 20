@@ -1,0 +1,26 @@
+# Day 20
+
+1. MHA (Multi Head Attention)
+
+When we give a prompt to the llm at that time the llm needs to underatand which word reffer to what so that it won't get confuse what to answer.
+So this work is done by the Transformer and called as Attention.
+
+Every token gives 3 vectors
+Query = what the token is looking for
+Key = what token it can match on
+Value = information of the token
+
+The model compare the query with the keys and the better matches gets the higher ratting and then scores the whole sequency for eveery token pair.
+And then it normalizes them into the weights and Heaads are formed.
+This is done it in several ways at once so it is called as Multi Head.
+
+2. Multi Query Attention
+
+When the KV cache is generated it requires memory for the storage but for every prompt there is multiple blocks and then it will require a large chunk of storage.
+When we store multiple head then each head has its own output and KV cache so each head requireds storage so instead of using different KV cache we should use one KV cache for all the head.
+This will save the memory from the storage.
+
+3. Grouped Query Attention
+In MQA the quality of response get degraded so,
+This suggest that instead of sharing the same key and values to all the query we should create the group of query and share each key and value only within group of queries.
+It means that we should make a group of query which will share with few key and values.
