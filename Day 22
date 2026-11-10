@@ -1,1 +1,24 @@
 GPU vs CPU
+
+CPU has 24 core inside a chip whereas GPU has 10,000 core inside the chip 
+In CPU small calculation has faster speed rather than GPU
+CPU is flexible and operate the operating system and applicationsbut GPU can't
+GPU has 64 Bus width and 1.15 Terabytes/sec whereas CPU has 64 bus bit and gigabytes/sec.
+
+If we need to evaluate buch of data then GPU is better rather than CPU.
+
+There are 3 things in the GPU which do all the calcuation in it.
+1. CUDA Core
+2. Tensor Core 
+3. Ray Tracing Core
+
+1.Cuda is used to do binary calculation (add, sub, multi, divid) mostly used while gaming.
+2.Tensor is used for matrix calculation (add, sub, multi, divid) mosly used in geometry transformation, Neura networks and AI.
+3.Ray trasing is the largest but the fewest which are used in ray tracing algorithms.
+
+In the Cuda core there is approx 4,10,000 transistors where 50,000 transistors performs the operation of A x B + C (called as Fused Multiply and Add).
+It is the most of the work the gpu does. Other of the transistor does the Bit Shifting and Bit Masking and collecting the incoming operands and outputing the results.
+
+Along this core there is 12 Graphic Memory Controller, 2 L2 Cache, PCIe Interface, NVLink, Gigthread Engine(Manages all the graphic clusters ).
+
+SIM (Single Instruction Multiple Data) it is used to render the places in the game
