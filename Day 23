@@ -1,0 +1,17 @@
+Kernal: It is the function which executed on the GPU. The function is instantiated by adding the _global_identifier.
+
+Streaming Multiprocessor (SM): Executation unit of the GPU which executes the Wrap.
+
+Warp: A group of 32 threads.
+Grid: Collection of blocks and max number of blocks is dependent on the device.
+Blocks: Group of Threads which are execuated on GPU.
+Threads: Smallest unit of execution in CUDA and each thread executes the same but operates on different data.
+
+1. Warp:
+It is a 32 bit thread  within a thread block such that all the threads in the wrap execute the same instruction.
+All the threads in the warp are always synchronous.
+One CUDA warp can be proccesed by on cuda core only.
+
+Memory is not shared between host(CPU) and device (GPU) so it need  way to transfer the data.
+with the help of cudaMalloc we can allocate the size to the GPU and with 'cudaMemcpy' we can copy the memory from hot to device and visa versa and 'cudaFree' help to free GPU memory.
+
