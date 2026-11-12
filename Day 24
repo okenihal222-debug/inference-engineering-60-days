@@ -1,0 +1,29 @@
+1. Model Weights
+Weights are the learned parameters of an AI model.
+
+2. Activations
+Activations are intermediate values created while the model processes input tokens.
+
+More input tokens can require more activation memory and Larger batch sizes generally increase activation memory.
+Efficient memory management helps avoid GPU out-of-memory errors.
+
+3. KV Cache
+KV cache stores previously calculated Key and Value tensors during text generation.
+As it Avoids recomputing previous tokens, Makes autoregressive generation more efficient and Uses additional GPU memory as the sequence grows.
+
+4. Memory Fragmentation
+Memory fragmentation happens when GPU memory is divided into small unused or poorly arranged blocks.
+Even if some memory is technically free, allocating a large continuous block can become difficult.
+
+KV cache memory:
+2 \times L \times B \times S \times H_{KV} \times D \times Bytes
+
+Where:
+* L = Number of layers
+* B = Batch size
+* S = Sequence length
+* Hkv = Number of KV heads
+* D = Head dimension
+* Bytes = Bytes per element (2 for FP16)
+
+The factor 2 represents Key and Value.
