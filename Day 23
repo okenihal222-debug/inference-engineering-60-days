@@ -1,4 +1,4 @@
-Kernal: It is the function which executed on the GPU. The function is instantiated by adding the _global_identifier.
+Kernal: It is the function which executed on the GPU. The function is initiate by adding the _global_identifier.
 
 Streaming Multiprocessor (SM): Executation unit of the GPU which executes the Wrap.
 
@@ -13,5 +13,5 @@ All the threads in the warp are always synchronous.
 One CUDA warp can be proccesed by on cuda core only.
 
 Memory is not shared between host(CPU) and device (GPU) so it need  way to transfer the data.
-with the help of cudaMalloc we can allocate the size to the GPU and with 'cudaMemcpy' we can copy the memory from hot to device and visa versa and 'cudaFree' help to free GPU memory.
+with the help of cudaMalloc we can allocate the size to the GPU and with 'cudaMemcpy' we can copy the array from host to device and visa versa and 'cudaFree' help to free GPU memory.
 
